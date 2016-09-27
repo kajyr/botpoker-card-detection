@@ -22,5 +22,18 @@ module.exports = {
 		let grouped = groupByRank(cards)
 		let tris = grouped.filter((rank) => rank.length === 4)
 		return tris.length > 0
+	},
+
+	hasDoppiaCoppia: (cards) => {
+		let grouped = groupByRank(cards)
+		console.log(grouped)
+		let tris = grouped.filter((rank) => rank.length === 4)
+		return tris.length > 0
+	},
+
+	hasFull: (cards) => {
+		let grouped = groupByRank(cards)
+		let tris = grouped.filter((rank) => rank.length === 4)
+		return tris.length > 0
 	}
 }
