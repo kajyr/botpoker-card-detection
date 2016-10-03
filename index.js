@@ -24,7 +24,7 @@ module.exports = {
 
 	/**
 	* detect if there is a Coppia inside your cards
-	* @param cards array the cards array
+	* @param cards {array} the cards array
 	*/
 	hasCoppia: (cards) => {
 		let grouped = groupByRank(cards)
@@ -33,7 +33,7 @@ module.exports = {
 	
 	/**
 	* detect if there is a Tris inside your cards
-	* @param cards array the cards array
+	* @param cards {array} the cards array
 	*/
 	hasTris: (cards) => {
 		let grouped = groupByRank(cards)
@@ -42,7 +42,7 @@ module.exports = {
 
 	/**
 	* detect if there is a Tris inside your cards
-	* @param cards array the cards array
+	* @param cards {array} the cards array
 	*/
 	hasPoker: (cards) => {
 		let grouped = groupByRank(cards)
@@ -51,7 +51,7 @@ module.exports = {
 
 	/**
 	* detect if there is a Tris inside your cards
-	* @param cards array the cards array
+	* @param cards {array} the cards array
 	*/
 	hasDoppiaCoppia: (cards) => {
 		let grouped = groupByRank(cards)
@@ -60,7 +60,7 @@ module.exports = {
 
 	/**
 	* detect if there is a Tris inside your cards
-	* @param cards array the cards array
+	* @param cards {array} the cards array
 	*/
 	hasFull: (cards) => {
 		let grouped = groupByRank(cards)
@@ -69,7 +69,7 @@ module.exports = {
 
 	/**
 	* Gives you the sklansky cluster for your hand.
-	* @param hand array your 2 card hand
+	* @param hand {array} your 2 card hand
 	*/
 	sklanskyCluster: (hand) => {
 		hand = sortbyRank(hand)

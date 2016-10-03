@@ -12,7 +12,7 @@ detect if there is a Coppia inside your cards
 
 **Parameters**
 
-**cards**: , array the cards array
+**cards**: `array`, the cards array
 
 
 
@@ -22,7 +22,7 @@ detect if there is a Tris inside your cards
 
 **Parameters**
 
-**cards**: , array the cards array
+**cards**: `array`, the cards array
 
 
 
@@ -32,7 +32,7 @@ detect if there is a Tris inside your cards
 
 **Parameters**
 
-**cards**: , array the cards array
+**cards**: `array`, the cards array
 
 
 
@@ -42,7 +42,7 @@ detect if there is a Tris inside your cards
 
 **Parameters**
 
-**cards**: , array the cards array
+**cards**: `array`, the cards array
 
 
 
@@ -52,7 +52,7 @@ detect if there is a Tris inside your cards
 
 **Parameters**
 
-**cards**: , array the cards array
+**cards**: `array`, the cards array
 
 
 
@@ -62,7 +62,7 @@ Gives you the sklansky cluster for your hand.
 
 **Parameters**
 
-**hand**: , array your 2 card hand
+**hand**: `array`, your 2 card hand
 
 
 
