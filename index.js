@@ -20,6 +20,11 @@ const tris = (grouped) => groupsOf(grouped, 3)
 
 
 module.exports = {
+	
+	/**
+	* sorts your cards by rank, from A to 2
+	* @param cards {array} the cards array
+	*/
 	sortbyRank: sortbyRank,
 
 	/**

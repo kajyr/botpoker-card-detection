@@ -56,6 +56,16 @@ detect if there is a Tris inside your cards
 
 
 
+### card-detector.hasColore(cards) 
+
+detect if there is a Flush inside your cards
+
+**Parameters**
+
+**cards**: `array`, the cards array
+
+
+
 ### card-detector.sklanskyCluster(hand) 
 
 Gives you the sklansky cluster for your hand.
