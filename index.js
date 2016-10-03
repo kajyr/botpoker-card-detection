@@ -13,6 +13,7 @@ const SORTING_RANK = ['A', 'K', 'Q', 'J', '10', '9', '8', '7', '6', '5', '4', '3
 const sortbyRank = (array) => array.slice().sort((a, b) => SORTING_RANK.indexOf(a.rank) - SORTING_RANK.indexOf(b.rank))
 
 const groupByRank = (cards) => _.values(_.groupBy(cards, 'rank'))
+const groupByType = (cards) => _.values(_.groupBy(cards, 'type'))
 const groupsOf = (grouped, qty) => grouped.filter((rank) => rank.length === qty)
 const coppie = (grouped) => groupsOf(grouped, 2)
 const tris = (grouped) => groupsOf(grouped, 3)
@@ -70,6 +71,16 @@ module.exports = {
 	hasFull: (cards) => {
 		let grouped = groupByRank(cards)
 		return tris(grouped).length === 1 && coppie(grouped).length === 1
+	},
+
+	/**
+	* detect if there is a Flush inside your cards
+	* @param cards {array} the cards array
+	*/
+	hasColore: (cards) => {
+		let grouped = groupByType(cards)
+		// tutte le carte devono essere nello stesso gruppo
+		return groupsOf(grouped, cards.length).length === 1
 	},
 
 	/**
