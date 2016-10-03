@@ -21,7 +21,7 @@ const tris = (grouped) => groupsOf(grouped, 3)
 
 
 module.exports = {
-	
+
 	/**
 	* sorts your cards by rank, from A to 2
 	* @param cards {array} the cards array
@@ -47,7 +47,7 @@ module.exports = {
 	},
 
 	/**
-	* detect if there is a Tris inside your cards
+	* detect if there is a Poker inside your cards
 	* @param cards {array} the cards array
 	*/
 	hasPoker: (cards) => {
@@ -56,7 +56,7 @@ module.exports = {
 	},
 
 	/**
-	* detect if there is a Tris inside your cards
+	* detect if there is a Doppia Coppia inside your cards
 	* @param cards {array} the cards array
 	*/
 	hasDoppiaCoppia: (cards) => {
@@ -65,7 +65,7 @@ module.exports = {
 	},
 
 	/**
-	* detect if there is a Tris inside your cards
+	* detect if there is a Full inside your cards
 	* @param cards {array} the cards array
 	*/
 	hasFull: (cards) => {

@@ -28,7 +28,7 @@ detect if there is a Tris inside your cards
 
 ### card-detector.hasPoker(cards) 
 
-detect if there is a Tris inside your cards
+detect if there is a Poker inside your cards
 
 **Parameters**
 
@@ -38,7 +38,7 @@ detect if there is a Tris inside your cards
 
 ### card-detector.hasDoppiaCoppia(cards) 
 
-detect if there is a Tris inside your cards
+detect if there is a Doppia Coppia inside your cards
 
 **Parameters**
 
@@ -48,7 +48,7 @@ detect if there is a Tris inside your cards
 
 ### card-detector.hasFull(cards) 
 
-detect if there is a Tris inside your cards
+detect if there is a Full inside your cards
 
 **Parameters**
 
